@@ -4,9 +4,9 @@
 
 THREE.DRACOLoader = function ( manager ) {
 
-	THREE.Loader.call( this, manager );
-    //const that = new THREE.Loader(manager);
-    //Object.assign(this, that);
+	//THREE.Loader.call( this, manager );
+    const that = new THREE.Loader(manager);
+    Object.assign(this, that);
 	this.decoderPath = '';
 	this.decoderConfig = {};
 	this.decoderBinary = null;
